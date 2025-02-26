@@ -1,0 +1,13 @@
+.card{
+    max-width: 300px;
+}
+
+@media (min-width: 1024px) {
+    .card{
+        max-width: 600px;
+    }
+}
+
+/* body{
+    background-color: rgb(176, 171, 171);
+} */
