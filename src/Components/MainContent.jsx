@@ -30,11 +30,11 @@ const MainContent = () => {
         </div>
         <div className="card bg-warning text-center card-2 align-self-md-center mb-5">
           <img src={logo} alt="" />
-          <h4>CLEANING AND DETAILING FOR BIKES STARTS JUST @499</h4>
+          <h4>CLEANING AND DETAILING FOR CARS STARTS JUST @999</h4>
         </div>
         <div className="card bg-warning text-center card-3  align-self-md-end">
           <img src={logo} alt="" />
-          <h4>CLEANING AND DETAILING FOR BIKES STARTS JUST @499</h4>
+          <h4>MONTHLY SUBSCRIPTION STARTS @999</h4>
         </div>
       </div>
       </div>

@@ -1,49 +1,63 @@
 import React from 'react'
-import pack1 from '../assets/Pack1.png'
-import pack2 from '../assets/Pack2.png'
-import pack3 from '../assets/Pack3.png'
+import Card from './Card'
 
 
 const SubContent2 = () => {
+    const cardData = [
+        {
+            price: "999/-" ,
+            pack: "Package 1",
+            info: "In this packs the services provided are listed below",
+            features: ["Complete Exterior", "Interior Cleaning", "Wax polishing"],
+            month: "Monthly subription just @2999/-"
+        },
+        {
+            price: "499/-" ,
+            pack: "Package 2",
+            info: "In this packs the services provided are listed below",
+            features: ["Complete Exterior", "Wax polishing"],
+            month: "Monthly subription just @1499/-"
+
+        },
+        {
+            price: "3999/-" ,
+            pack: "Package 3",
+            info: "In this packs the services provided are listed below",
+            features: ["Complete Exterior and Interior detailing"],
+            month: "Monthly subription just @2999/-"
+        }
+    ]
+
   return (
     <>
-    <div className="text-center border border-warning-subtle bg-warning py-2">
+    <div className="text-center border border-warning-subtle bg-warning py-2 mt-4">
         <h3>Detailed Subscription</h3>
     </div>
-    <div className="container">
-    <div className="div d-flex justify-content-center mt-3">
-        <img src={pack1} alt="" style={{width: "15rem"}} />
+    <div className="container d-flex justify-content-center  ">
+        <div className="row ">
+            <div className="d-flex flex-column flex-md-row mb-4 ">
+            {cardData.map((data, index)=>
+                <Card
+                  key = {index}
+                  price = {data.price}
+                  pack = {data.pack}
+                  info = {data.info}
+                  features = {data.features}
+                  month = {data.month}
+                  />
+                )}
+            
+            </div>
+        </div>
     </div>
-    <div className="text-center mt-2">
-    <h4>Complete Exterior+Interior
-    cleaning+wax polishing @999/-</h4> <br />
-    <h4>monthly subcription just @2999/-</h4>
+    <div className="container text-center">
+        <div className="col-12">
+            <strong>Schedules: </strong>
+            <strong>1 Wash/Week x 4 weeks</strong><br />
+            <strong>(Only for subscribers)</strong>
+        </div>
     </div>
-
-    <div className="div d-flex justify-content-center">
-        <img src={pack2} alt="" style={{width: "15rem"}} />
-    </div>
-    <div className="text-center mt-2">
-    <h4>Complete Exterior+wax polishing @499/-</h4> <br />
-    <h4>monthly subcription just @1499/-</h4>
-    </div>
-
-    <div className="div d-flex justify-content-center">
-        <img src={pack3} alt="" style={{width: "15rem"}} />
-    </div>
-    <div className="text-center mt-2">
-    <h4>Complete Exterior and Interior
-    cleaning @3999/-</h4> 
-    </div>
-    </div>
-    <div className="div border border-black py-2" style={{fontWeight:"bolder"}}>
-    <div className="text-center">
-        Schedules <br />
-        1 Wash/week x 4 weeks <br />
-        (only for subscribers)
-    </div>
-    
-    </div>
+   
     
     </>
   )

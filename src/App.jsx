@@ -7,6 +7,8 @@ import Navbar from './Components/Navbar'
 import MainContent from './Components/MainContent';
 import SubContent from './Components/SubContent';
 import SubContent2 from './Components/SubContent2';
+import Individual from './Components/Individual';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
     <MainContent/>
     <SubContent/>
     <SubContent2/>
+    <Individual/>
+    <Footer/>
     </>
   )
 }
