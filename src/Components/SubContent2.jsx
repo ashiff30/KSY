@@ -28,10 +28,10 @@ const SubContent2 = () => {
 
   return (
     <>
-    <div className="container text-center py-2 mt-4 p-4" >
+    <div className="container text-center py-1 mt-4 p-3" >
         <div className="row border border-black " style={{borderRadius:"5px", backgroundColor:"yellow"}}>
             <div className="col-12 py-3">
-            <h3>Cleaning Subscription Plans</h3>
+            <h4>Cleaning Subscription Plans</h4>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@ const SubContent2 = () => {
         </div>
     </div>
     <div className="container text-center">
-        <div className="col-12">
+        <div className="col-12 mt-3">
             <strong>Schedules: </strong>
             <strong>1 Wash/Week x 4 weeks</strong><br />
             <strong>(Only for subscribers)</strong>

@@ -3,10 +3,10 @@ import React from 'react'
 const Individual = () => {
   return (
     <>
-     <div className="container text-center py-2 mt-4 p-4" >
+     <div className="container text-center py-2 mt-4 p-3" >
         <div className="row border border-black " style={{borderRadius:"5px", backgroundColor:"yellow"}}>
             <div className="col-12 py-3">
-            <h3>Cleaning Subscription Plans</h3>
+            <h4>Cleaning Subscription Plans</h4>
             </div>
         </div>
     </div>
@@ -44,25 +44,25 @@ const Individual = () => {
     </tr>
   </tbody>
 </table> */}
-<div className="container p-3">
-  <div className="row d-flex align-content-center">
-    <div className="col-2">
-    <p className='border border-black' style={{maxWidth:180}}>Water Washing @299</p>
+<div className="container p-3 text-center ">
+  <div className="row ">
+    <div className="col-6 col-md-2 d-flex justify-content-center ">
+    <p className='border border-black bg-warning' style={{maxWidth:150}}>Water Washing @299</p>
     </div>
-    <div className="col-2">
-    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    <div className="col-6 col-md-2 d-flex justify-content-center">
+    <p className='border border-black bg-warning' style={{maxWidth:150}}>Water Washing @299</p>
     </div>
-    <div className="col-2">
-    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    <div className="col-6 col-md-2 d-flex justify-content-center">
+    <p className='border border-black bg-warning' style={{maxWidth:150}}>Water Washing @299</p>
     </div>
-    <div className="col-2">
-    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    <div className="col-6 col-md-2 d-flex justify-content-center">
+    <p className='border border-black bg-warning' style={{maxWidth:150}}>Water Washing @299</p>
     </div>
-    <div className="col-2">
-    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    <div className="col-6 col-md-2 d-flex justify-content-center">
+    <p className='border border-black bg-warning' style={{maxWidth:150}}>Water Washing @299</p>
     </div>
-    <div className="col-2">
-    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    <div className="col-6 col-md-2 d-flex justify-content-center">
+    <p className='border border-black bg-warning' style={{maxWidth:150}}>Water Washing @299</p>
     </div>
   </div>
 </div>

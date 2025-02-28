@@ -1,9 +1,28 @@
 import React from "react";
 import logo from "../assets/KSY-logo.png";
 import Button from "./Button";
+import FirstCard from "./FisrtCard";
 
 
 const MainContent = () => {
+
+  const cardData2 = [
+    {
+      info: "Cleaning and detailing for Bikes",
+      price: "Just @499"
+    },
+    {
+      info: "Cleaning and detailing for Cars",
+      price: "Just @99"
+    },
+    {
+      info: "Monthly Subscription",
+      price: "Just @499"
+    }
+
+  ]
+
+
   return (
     <>
     <div className="container p-4">
@@ -27,8 +46,22 @@ const MainContent = () => {
         </div>
       </div>
     </div>
-      
 
+    <div className="container text-center  d-flex justify-content-center">
+      <div className="row ">
+        <div className="col-12 d-md-flex column-gap-5">
+        {cardData2.map((data, index)=>
+            <FirstCard
+            key={index}
+            info={data.info}
+            price={data.price}
+            />
+
+       )}
+        </div>
+     
+      </div>
+    </div>
       {/* <div className="container mt-4">
       <div className="container d-flex flex-column align-items-center">
         <div className="card bg-warning text-center card-1 align-self-md-start mb-5">
@@ -45,9 +78,9 @@ const MainContent = () => {
         </div>
       </div>
       </div> */}
-      <h2 className="text-center mt-32mb-4">
+      <h3 className="text-center mt-3 mb-4">
       CLEANING AND DETAILING SERVICES AT <span className="text-warning">YOUR DOORSTEP!</span>
-      </h2>
+      </h3>
     </>
   );
 };
