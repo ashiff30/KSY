@@ -32,6 +32,7 @@ const StyledWrapper = styled.div`
    overflow: hidden;
    background: #66ff66;
    color: #ffbb00;
+   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
 
   button span {
@@ -56,7 +57,7 @@ const StyledWrapper = styled.div`
 
   button::before {
    content: "";
-   background: #7d7d7c;
+   background:rgb(0, 0, 0);
    width: 120%;
    left: -10%;
    transform: skew(30deg);

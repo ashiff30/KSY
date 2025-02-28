@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = ({price,pack,info,features,month = []}) => {
+const Card = ({price,pack,info,features = []}) => {
   return (
     <StyledWrapper>
-      <div className="plan">
+      <div className="plan mb-3 mt-3">
         <div className="inner">
           <span className="pricing">
             <span>
-              {price} <small>/ m</small>
+              {price}
             </span>
           </span>
           <p className="title">{pack}</p>
@@ -17,8 +17,7 @@ const Card = ({price,pack,info,features,month = []}) => {
           {features.map((features, index) => (
             <li key={index} className="feature-item">
               <span className="icon">
-                <svg height={24} width={24} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0h24v24H0z" fill="none" />
+                <svg height={24} width={28} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z" />
                 </svg>
               </span>
@@ -28,7 +27,6 @@ const Card = ({price,pack,info,features,month = []}) => {
             
           </ul>
           <div className='month'>
-            <strong>{month}</strong>
           </div>
         </div>
       </div>
@@ -39,11 +37,12 @@ const Card = ({price,pack,info,features,month = []}) => {
 const StyledWrapper = styled.div`
   .plan {
     border-radius: 16px;
-    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    // box-shadow: 30px 30px 30px -20px rgba(23, 22, 22, 0.2);
     padding: 10px;
     background-color: #fff;
     color: #697e91;
-    max-width: 300px;
+    max-width: 350px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   .plan strong {
@@ -84,7 +83,7 @@ const StyledWrapper = styled.div`
     font-weight: 600;
     font-size: 1.25rem;
     color: #425675;
-    margin-top: -10%;
+    margin-top: -8%;
   }
 
   .plan .title + * {

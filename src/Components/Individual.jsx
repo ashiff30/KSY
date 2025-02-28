@@ -3,10 +3,14 @@ import React from 'react'
 const Individual = () => {
   return (
     <>
-    <div className="text-center border border-warning-subtle bg-warning mt-4" id='Plans'>
-        <h3>Individual Cleaning services Plans</h3>
+     <div className="container text-center py-2 mt-4 p-4" >
+        <div className="row border border-black " style={{borderRadius:"5px", backgroundColor:"yellow"}}>
+            <div className="col-12 py-3">
+            <h3>Cleaning Subscription Plans</h3>
+            </div>
+        </div>
     </div>
-    <table className="table align-middle table-bordered border-dark mt-4">
+    {/* <table className="table align-middle table-bordered border-dark mt-4">
   <thead>
     <tr className='text-center'>
       <th scope="col">Service</th>
@@ -39,7 +43,29 @@ const Individual = () => {
       <td>1499/-</td>
     </tr>
   </tbody>
-</table>
+</table> */}
+<div className="container p-3">
+  <div className="row d-flex align-content-center">
+    <div className="col-2">
+    <p className='border border-black' style={{maxWidth:180}}>Water Washing @299</p>
+    </div>
+    <div className="col-2">
+    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    </div>
+    <div className="col-2">
+    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    </div>
+    <div className="col-2">
+    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    </div>
+    <div className="col-2">
+    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    </div>
+    <div className="col-2">
+    <p className='border border-black' style={{maxWidth:150}}>Water Washing @299</p>
+    </div>
+  </div>
+</div>
     </>
   )
 }

@@ -15,7 +15,6 @@ const App = () => {
     <>
     <Navbar/>
     <MainContent/>
-    <SubContent/>
     <SubContent2/>
     <Individual/>
     <Footer/>

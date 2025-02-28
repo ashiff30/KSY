@@ -4,7 +4,7 @@ import logo from '../assets/KSY-logo.png'
 const Navbar = () => {
   return (
    <>
-   <nav className="navbar navbar-expand-lg text-bg-warning ">
+   <nav className="navbar navbar-expand-lg text-bg-light " >
   <div className="container">
     <a className="navbar-brand" href="#"><img src={logo} alt="LOGO" width={150} /></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
