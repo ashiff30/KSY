@@ -5,3 +5,8 @@
     font-weight: 400;
   font-style: normal;
 }
+
+.content-wrapper {
+  position: relative;
+  z-index: 1; /* Keeps content above the particles */
+}

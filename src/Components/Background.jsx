@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Renderer, Camera, Geometry, Program, Mesh } from "ogl";
 
-import './Particles.css';
+import '../Components/Particles.css';
 
 const defaultColors = ["#ffffff", "#ffffff", "#ffffff"];
 
@@ -76,7 +76,7 @@ const fragment = /* glsl */ `
   }
 `;
 
-const Particles = ({
+const Background = ({
   particleCount = 200,
   particleSpread = 10,
   speed = 0.1,
@@ -231,4 +231,4 @@ const Particles = ({
   );
 };
 
-export default Particles;
+export default Background;

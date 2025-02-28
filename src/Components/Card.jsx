@@ -24,10 +24,7 @@ const Card = ({price,pack,info,features = []}) => {
               <span><strong>{features}</strong></span>
             </li>
             ))}
-            
           </ul>
-          <div className='month'>
-          </div>
         </div>
       </div>
     </StyledWrapper>
@@ -135,6 +132,8 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: end;
   }
+
+
 
   .plan .button {
     background-color: #6558d3;

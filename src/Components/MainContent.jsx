@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "../assets/KSY-logo.png";
 import Button from "./Button";
 import FirstCard from "./FisrtCard";
+import AOS from "aos";
+
 
 
 const MainContent = () => {
@@ -13,11 +14,11 @@ const MainContent = () => {
     },
     {
       info: "Cleaning and detailing for Cars",
-      price: "Just @99"
+      price: "Just @999"
     },
     {
       info: "Monthly Subscription",
-      price: "Just @499"
+      price: "Just @999"
     }
 
   ]
